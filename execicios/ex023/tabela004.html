@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Execeicio de tabelas</h1>
+
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <th slot="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th scope="colgroup" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Viagadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Incepition</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matriz </td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Burno Mendonça</td>
+                <td>Intocavéis</td>
+                <td>Amnésia</td>
+                <td>Glafiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Viagadores </td>
+                <td>Gato de botas</td>
+                <td>Hulk</td>
+            </tr>
+            <tr>
+                <td>Mario Lucas</td>
+                <td>Naruto</td>
+                <td>One Piece</td>
+                <td>Prova de amor</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
